@@ -1,0 +1,46 @@
+/* Universal Selector */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Element Selector */
+
+/* h1{
+    color: #808080;
+}
+
+p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: rgb(24, 248, 4);
+    border: 2px dotted red;
+} */
+
+/* Class Selector */
+.heading{
+    color: brown;
+    font-style: italic;
+    font-variant: small-caps;
+    text-align: center;
+}
+.para1{
+    color:#00008b;
+    font-size:x-large;
+}
+.para2{
+    color: #740081;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+.para3{
+    font-family :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+/* Id Selector */
+#heading1{
+    color: #326300;
+    font-style: oblique;
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ovverflow And Z-Index</title>
+    <style>
+      P {
+        /* default z-index is 0 */
+        /* jitna jyada z-index utna jyada upar */
+        height: 250px;
+        width: 250px;
+        border: 2px solid #000000;
+        /* overflow: hidden; */
+        /* overflow: scroll; */
+        overflow: auto;
+      }
+
+      .one{
+        height: 50px;
+        width: 50px;
+        background-color: #ff0000;
+        position: absolute;
+        z-index: -1;
+        top: 1px;
+      }
+      .two{
+        height: 50px;
+        width: 50px;
+        background-color: #ffff00;
+        position: absolute;
+        top: 30px;
+        z-index: -2;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Overflow -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid similique
+      excepturi, unde a id eius repellendus sit dolorem fugiat quia assumenda
+      voluptatem distinctio quaerat perspiciatis aperiam, maiores quidem!
+      Soluta, facere in molestiae veritatis, facilis tempore odit officiis ipsa,
+      corrupti quae voluptatem ut minima. Laboriosam eaque aliquid doloribus
+      optio ut libero corrupti saepe perspiciatis veritatis vero quasi a facere
+      dignissimos eum, aperiam accusantium nisi, expedita, nobis rem repudiandae
+      deserunt. Rerum tenetur non dicta, aut dolores beatae accusantium ut
+      delectus velit quaerat iusto ex aspernatur fugit repellendus atque optio
+      inventore quidem fugiat aliquam veritatis. Quia facilis beatae voluptates
+      iste eaque? Facere, minima.
+    </p>
+    <!-- Z-index means stack -->
+     <div class="one"></div>
+     <div class="two"></div>
+  </body>
+</html>

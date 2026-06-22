@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Album</title>
+    <style>
+        .container{
+            display: grid;
+            height: 1000px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(3, 250px);
+        }
+        /* .box{ */
+            /* height: 100px;
+            width: 100px; */
+        /* } */
+        .box1{
+            background-color: #ff0000;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .box2{
+            background-color: #ff9100;
+        }
+        .box3{
+            background-color: #ffee00;
+        }
+        .box4{
+            background-color: #aaff00;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .box5{
+            background-color: #37ff00;
+        }
+        .box6{
+            background-color: #00ffa6;
+        }
+        .box7{
+            background-color: #003cff;
+        }
+        .box8{
+            background-color: #ea00ff;
+        }
+        .box9{
+            background-color: #ff009d;
+        }
+    </style>
+</head>
+<body>
+    <!-- Grid Album -->
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+        <div class="box box7"></div>
+        <div class="box box8"></div>
+        <div class="box box9"></div>
+    </div>
+</body>
+</html>

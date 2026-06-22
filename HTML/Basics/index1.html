@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PW Skills</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <h2>Hello World!</h2>
+    <h6>Hello World!</h6>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae commodi aperiam voluptate! In possimus vel unde voluptatem sed iste, ut nihil, necessitatibus dolor maxime magni fugit impedit est minus corporis. Voluptatibus et asperiores molestiae dolor esse velit!</p>
+    <!-- <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptates ut neque.</h6> -->
+
+    <!-- Attributes -->
+    <img src="Anand.jpg" alt="Anand">
+
+    <!-- Some Reserved keywords -->
+    <!-- <p> 5 > 3</p>  Bad Method -->
+    <p>5 &gt; 3</p>
+    <p>5 &lt; 18</p>
+    <h1> a &copy; b</h1>
+    <h3>a &quot;</h3>
+    <h3>&quot;Anand&quot;</h3>
+    <h4>a &amp; b</h4>
+
+    <!-- Rather than using these keywords we can use numbers associated with it that is unicode value -->
+    <p>A is &#65</p>
+    <p>B is &#66</p>
+    <p>a is &#97</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptate assumenda laudantium recusandae
+        <!-- Here it is will not print space     -->
+
+    error deserunt minima, ullam facere eveniet provident molestias eos iusto! Accusamus delectus iusto odio perferendis error maiores eos esse minus quasi?</p>
+
+    <!-- To print space We use &nbsp;-->
+     <!-- If we write &nbsp; 1 time is will give on space NUmber of &nbsp; = Nomber of space-->
+
+    <p>Lorem ipsum dolor sit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; amet consectetur adipisicing elit. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Iste, itaque.</p>
+    <!-- id and class attribute -->
+    <!-- for class we use "tagname.classname" then enter -->
+    <h3 class="m1"></h3>
+    <p class="hero"></p>
+    <!-- for id we use "tagname#idname" then enter -->
+    <p id="id1"></p>
+    <h4 id="id2"></h4>
+
+    <p title="abc"></p> <!-- by using p[title=abc] then enter -->
+    <p>Anand is good boy</p> <!-- By using p{Anand is good boy} then enter -->
+
+    <!-- Parent Child -->
+    <!-- div>p>li will give-->
+    <div>
+    <p>
+        <li></li>
+    </p>
+    </div>
+
+    <!-- div*5 will give -->
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <!-- div>div>p>li*5 will give-->
+    <div>
+        <div>
+            <p>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </p>
+        </div>
+    </div>
+
+    <!-- div.class1>p.classp>p#id1>li*5 will give -->
+    <div class="class1">
+        <p class="classp">
+            <p id="id1">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </p>
+        </p>
+    </div>
+
+    <!-- Sibling -->
+    
+    <!-- div>p+p+p will give -->
+    <div>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+
+    <!-- Using Multiplication(*) -->
+    <!-- ul>li*5 will give -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <!-- Grouping -->
+    <!-- div>(p>li*3)>p>h5 will give -->
+    <div>
+        <p>
+            <li></li>
+            <li></li>
+            <li></li>
+        </p>
+        <p>
+            <h5></h5>
+        </p>
+    </div>
+
+    <!-- div>(nav>li*5)>footer>p{Hello Anand} will give -->
+    <div>
+        <nav>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </nav>
+        <footer>
+            <p>Hello Anand</p>
+        </footer>
+    </div>
+</body>
+</html>

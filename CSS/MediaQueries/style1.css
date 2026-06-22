@@ -1,0 +1,55 @@
+body{
+    background-color: #ff0000;
+}
+
+
+div::after{
+    content: 'Welcome to demo';
+}
+div{
+    font-size: x-large;
+    text-align: center;
+}
+/* syntax -  */
+/*  @media(condition){
+        css decoration
+    } */
+
+@media(max-width:400px){
+    body{
+        background-color: chocolate;
+    }
+    div::after{
+        content: 'Smaller Screen';
+    }
+}
+
+@media (min-width:400px) and (max-width:600px){
+    body{
+        background-color: darkslategrey;
+    }
+    div::after{
+        content: 'yes it works';
+    }
+}
+@media(min-width: 600px){
+    /* if viewport is atleast 600px then this style will apply */
+    body{
+        background-color: blueviolet;
+    }
+    div::after{
+        font-size: x-large;
+        text-align: center;
+        content: 'Medium size screen';
+    }
+}
+@media(min-width: 900px){
+    /* if viewport is atleast 900px then this style will apply */
+    body{
+        background-color: aqua;
+    }
+    div::after{
+        content: 'Woah its working';
+        font-size: x-large;
+    }
+}

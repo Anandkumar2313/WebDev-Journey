@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psudo Class Selector</title>
+    <style>
+        /* .hover:hover{
+            background-color: #000000;
+            color: #ff0000;
+        }
+        input:focus{
+            background-color: #ff7a90;
+            color: #f0f8ff;
+            font-size: 30px;
+        } */
+
+        a:hover{
+            color: #fa9aaa;
+        }
+        a:active{
+            color: #b51c1c;
+        }
+        /* a:visited{
+            color: #008705;
+        } */
+        
+        a:first-child{
+            background-color: #b51c1c;
+        }
+
+        a:nth-child(2n){
+            background-color: #ffc0cb;
+        }
+
+        p::first-line{
+            color: #ee82ee;
+        }
+        p::first-letter{
+            color: #0000ff;
+        }
+        p::after{
+            content: "Anand";
+            color: #fa9aaa;
+        }
+        p::before{
+            content: "Anand";
+            color: #fa9aaa;
+        }
+        p::selection{
+            background-color: black;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!-- Psudo Class -->
+    <p class="hover">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, eligendi.</p>
+    <input type="text">
+    <hr>
+    <nav>
+        <a href="https://www.google.com/">Google</a>
+        <a href="https://www.google.com/">Google</a>
+        <a href="https://www.google.com/">Google</a>
+        <a href="https://www.google.com/">Google</a>
+        <a href="https://www.google.com/">Google</a>
+        <a href="https://www.google.com/">Google</a>
+    </nav>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel quia suscipit officia expedita voluptatem accusamus laborum unde excepturi veniam molestiae earum nobis dignissimos tenetur, quis delectus quibusdam doloremque, libero minus dolores laboriosam? Doloremque, excepturi. Harum, ab quo a voluptas adipisci maxime architecto iste id reprehenderit debitis cum tempore nam vel.</p>
+</body>
+</html>

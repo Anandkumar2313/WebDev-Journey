@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - DOM Part 3</title>
+</head>
+<body>
+
+    <!-- Normal HTML -->
+    <h1>Hello World!</h1>
+    <p id="js"></p>
+    <button ondblclick="hey()" id="jss">Submit</button>
+    <!-- onclick means single click me fuction hey call hoga -->
+    <!-- ondblclick means double click me fuction hey call hoga -->
+
+    <!-- JavaScript -->
+    <script>
+        // syntax : 
+        // document.addEventListener("Kya karne par", "functionCall se kya krna hai");
+        // kya karne par me : click, dblclick, mouseenter, 
+        document.addEventListener("click", hello);
+        function hello(){
+            document.getElementById("js").innerText = "Namaste All";
+        }
+
+        function hey(){
+            document.getElementById("jss").innerText = "Namaste";
+            document.getElementById("jss").style.color = "red";
+            document.getElementById("jss").style.backgroundColor = "purple";
+            document.getElementById("jss").style.borderRadius = "15px";
+            document.getElementById("jss").style.border = "2px solid purple";
+            document.getElementById("jss").style.padding = "4px 22px";
+        }
+    </script>
+</body>
+</html>

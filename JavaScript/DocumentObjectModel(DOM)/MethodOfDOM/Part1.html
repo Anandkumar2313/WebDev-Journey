@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM part 1</title>
+  </head>
+  <body>
+    <!-- 1. id -->
+    <p id="one"><span>Hello</span> Namaste</p>
+
+    <!-- 2.class -->
+    <ul>
+      <li class="tech">One</li>
+      <li class="tech">Two</li>
+      <li class="tech">Three</li>
+    </ul>
+
+    <!-- 3. By tag name -->
+    <h4>hey</h4>
+    <h4>Namaste</h4>
+    <h4><p>Hola</p>Hero</h4>
+
+    <!-- 4. Query Selector -->
+    <h2>Hello</h2>
+    <h2 class="classs">Hola</h2>
+    <h2 id="ids">Hey</h2>
+
+    <script>
+        // 1. id
+        let var1 = document.getElementById("one"); // var1 stores whole element : <p id="one">Namaste</p>
+        console.log(var1);
+        // output : <p id="one">Namaste</p>
+        console.log(var1.innerText); // var1 me jitna bhi content/text hoga sab return hoga
+        // output : Hello Namaste
+        console.log(var1.innerHTML); // var1 me andar ka pura html preturn hoga
+        // output : <span>Hello</span> Namaste
+
+        console.log("---------------------------------------------");
+        // 2. class
+        let var2 = document.getElementsByClassName("tech");
+        console.log(var2); // 3no li output milega
+        console.log(var2[2]); // 3no li me se index 2 ka li as output milega
+        console.log(var2[2].innerText); // 3no li me se index 2 ka text/content output milega i.e Three
+        console.log("---------------------------------------------");
+        // To manipulate Html element using javaScript
+        var2[1].innerText = "node.js"; // means var2 ke index1 ke content ko node.js kr do
+
+        console.log("---------------------------------------------");
+        // 3. TagName
+        let var3 = document.getElementsByTagName("h4");
+        console.log(var3);
+        console.log(var3[2].innerHTML);
+        console.log(var3[2].innerText);
+        var3[2].innerText = "Hola";
+        var3[2].style.color = "red"; // To give styling/CSS_property
+
+
+        console.log("---------------------------------------------");
+        // 4. Query selector
+        let var4 = document.querySelector(".classs");
+        console.log(var4);
+        var4.className = "hello";
+        var4.classList = "hello hola helo abc"
+        let var5 = document.querySelector("#ids");
+        console.log(var5);
+        var5.setAttribute("title", "Anand");
+        let var6 = document.querySelector("h2");
+        console.log(var6);
+    </script>
+  </body>
+</html>

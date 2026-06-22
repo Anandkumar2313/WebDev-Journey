@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container{
+            height: 300px;
+            width: 100vw;
+            /* display: inline-flex; */
+            display: flex;
+            border:2px solid black;
+            /* flex-direction: row;
+            flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse; */
+            flex-wrap: wrap;
+
+            /* justify-content move contents in x-axis */
+
+            /* justify-content: center; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: flex-end; */
+            
+            /* align-items move items in y-axis */
+
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+
+            /* gap: 30px; */
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+        }
+        .box1{
+            background-color: #ff0000;
+        }
+        .box2{
+            background-color: #fffb00;
+            /*By default order: 0 hota hai, According to ascending order of order element are placed in webPage*/
+            /* order: 1; */
+        }
+        .box3{
+            background-color: #00ff0d;
+            /* To increse width we can use flex-grow,Jisko jitna bda number utna jyada width */
+            /* To decrese width we can use flex-shrink,Jisko jitna bda number utna jyada shrink aur pehle shrink(jb display size km hoga tb) */
+            /* flex-grow: 1; */
+            /* flex-shrink: 5; */
+        }
+        .box4{
+            background-color: #00d9ff;
+            /* flex-grow: 3; */
+            /* flex-shrink: 10; */
+        }
+        .box5{
+            background-color: #0011ff;
+            /* align-self is used to make change in position of individual */
+            align-self: center;
+        }
+        .box6{
+            background-color: #ff00ee;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">Box1</div>
+        <div class="box box2">Box2</div>
+        <div class="box box3">Box3</div>
+        <div class="box box4">Box4</div>
+        <div class="box box5">Box5</div>
+        <div class="box box6">Box6</div>
+    </div>
+</body>
+</html>

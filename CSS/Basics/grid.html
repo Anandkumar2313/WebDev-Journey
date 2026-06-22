@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grids in CSS</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: auto auto auto ; */ /* jitna baar auto utna column */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* grid-template-columns: repeat(3,1fr); */
+            grid-template-columns: minmax(10px,2fr) minmax(10px,2fr) minmax(10px,2fr);
+            /* grid-template-rows: 1fr 1fr 1fr; */
+            grid-template-rows: 600px 120px 120px;
+            /*gap: 10px;*/ /*Both row and col*/
+            row-gap: 10px;
+            column-gap: 40px;
+        }
+        .box{
+            /* height: 100px; */
+            /* width: 100px; */
+            /* margin: 10px; */
+            border: 2px solid black;
+        }
+        .box1{
+            background-color: #ff0000;
+            /* align-self: center; */   /* align for y-axis */
+            /* justify-self: end; */ /* justify for x-axis */
+            /* width: 50px; */
+        }
+        .box2{
+            background-color: #fffb00;
+        }
+        .box3{
+            background-color: #002d02;
+        }
+        .box4{
+            background-color: #65a868;
+        }
+        .box5{
+            background-color: #1df5f1;
+        }
+        .box6{
+            background-color: #5f4984;
+        }
+        .box7{
+            background-color: #3d55cd;
+        }
+        .box8{
+            background-color: #a34c7f;
+        }
+        .box9{
+            background-color: #e00a8e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+        <div class="box box7"></div>
+        <div class="box box8"></div>
+        <div class="box box9"></div>
+    </div>
+</body>
+</html>

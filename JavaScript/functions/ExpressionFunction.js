@@ -1,0 +1,1 @@
+// All function are expression function

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration form</title>
+</head>
+<body>
+    <form action="/signup" method="get" target="_blank">
+        <fieldset>
+            <legend>User Registration form!!</legend>
+
+            <label for="fname">Enter First Name : </label>
+            <input type="text" id="fname" name="firstname" placeholder="Anand" autofocus autocapitalize="abc">
+            <label for="lname">Enter Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="kumar">
+            <br><br>
+            <label for="age">Age : </label>
+            <input type="number" name="" id="age" min="0" max="100">
+            <br><br>
+            <label for="email">Enter email : </label>
+            <input type="email" id="email" name="email" placeholder="abc@example.com">
+            <br><br>
+
+            <label for="password">Enter your Password : </label>
+            <input type="password" name="password" id="password">
+            <br><br>
+
+            <div>Gender</div>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <br>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <br>
+            <label for="transgender">Transgender</label>
+            <input type="radio" name="gender" id="transgender" value="Transgender">
+            <br><br>
+            <label for="country">Country : </label>
+            <input type="text" id="country" placeholder="India" disabled>
+            <br><br>
+
+            <input type="submit" value="Submit form">
+        </fieldset>
+    </form>
+</body>
+</html>

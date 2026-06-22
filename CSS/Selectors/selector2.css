@@ -1,0 +1,39 @@
+/* Universal Selector */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Descendent Selector */
+main p{
+    color: red;
+    text-decoration:underline;
+}
+
+/* Child Selector */
+h1 > p{
+    color: blue;
+    font-family: sans-serif;
+}
+
+/* Adjacent Sibling selector */
+section + p{
+    color: rgb(0, 130, 134);
+}
+
+/* General sibling selector */
+ul ~ ol{
+    color: rgb(65, 39, 0);
+    font-size: x-large;
+}
+
+/* Attribute Selector */
+[target="_blank"]{
+    color: green;
+    text-decoration: none;
+}
+
+[src~="Hello.png"]{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 2px solid black;
+}

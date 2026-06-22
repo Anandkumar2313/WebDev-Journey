@@ -1,0 +1,54 @@
+@media (max-width: 600px){
+    /* Usually for Phones */
+    body{
+        background-color: red;
+    }
+    div::after{
+        content: 'This is mobile compatible';
+    }
+}
+
+@media (min-width: 600px){     /* 600px to 768px */
+    /* usually for Portrait Tablets and Big Phones*/
+    body{
+        background-color: brown;
+    }
+    div::after{
+        content: 'This is Portrait Tablets and Big Phones compatible';
+    }
+}
+
+@media (min-width: 768px){  /* 768px to 992px */
+    /* Usually for Landscape Tablets*/
+    body{
+        background-color: chocolate;
+    }
+    div::after{
+        content: 'This is compatible for Landscape Tablets';
+    }
+}
+
+@media (min-width: 992px){  /* 992px to 1200px */
+    /* Usually for laptops */
+    body{
+        background-color: darkblue;
+    }
+    div::after{
+        content: 'This is compatible for Laptops';
+    }
+}
+
+@media (min-width: 1200px){ /* beyond 1200px */
+    /* Usually for Big Laptop / Screens */
+    body{
+        background-color: deeppink;
+    }
+    div::after{
+        content: 'This is compatible for Big Laptop/Screens';
+    }
+}
+
+div{
+    text-align: center;
+    font-size: xx-large;
+}
