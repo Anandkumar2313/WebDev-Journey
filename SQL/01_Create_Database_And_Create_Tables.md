@@ -1,5 +1,6 @@
 # Create Database & Create Tables
 
+```SQL
 mysql> Create database TechStoreDB;
 Query OK, 1 row affected (0.01 sec)
 
@@ -122,3 +123,4 @@ mysql> show tables;
 | products              |
 +-----------------------+
 6 rows in set (0.02 sec)
+```
