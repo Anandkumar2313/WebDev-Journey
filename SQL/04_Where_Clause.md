@@ -1,7 +1,6 @@
-Where Clause :-
-
-```SQL
+Where Clause 
 ->The WHERE clause filters rows based on a condition.
+```SQL
 
 mysql> /* WHERE CLAUSE*/
 mysql> /*Syntax : select column_name from table_name where condition; */
