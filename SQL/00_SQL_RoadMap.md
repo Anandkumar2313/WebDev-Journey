@@ -2,11 +2,11 @@
 
 ## Step 1: Read Data
 
-- [ ] SELECT
-- [ ] WHERE
-- [ ] ORDER BY
-- [ ] DISTINCT
-- [ ] LIMIT
+- [x] SELECT
+- [x] WHERE
+- [x] ORDER BY
+- [x] DISTINCT
+- [x] LIMIT
 - [ ] LIKE
 - [ ] BETWEEN
 - [ ] IN
