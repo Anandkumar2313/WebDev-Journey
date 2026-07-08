@@ -7,9 +7,9 @@
 - [x] ORDER BY
 - [x] DISTINCT
 - [x] LIMIT
-- [ ] LIKE
-- [ ] BETWEEN
-- [ ] IN
+- [x] LIKE
+- [x] BETWEEN
+- [x] IN
 - [ ] Aggregate Functions
 - [ ] GROUP BY
 - [ ] HAVING
