@@ -1,4 +1,4 @@
-INNER JOIN
+INNER JOIN Part(1) : JOIN TWO TABLE
 
 ```SQL
 mysql> /* INNER JOIN */

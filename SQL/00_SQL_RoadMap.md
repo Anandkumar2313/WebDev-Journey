@@ -1,8 +1,26 @@
 # SQL Learning Roadmap
 
-## Step 1: Read Data
+## Step 1: Database Basics
 
+- [x] CREATE DATABASE
+- [x] DROP DATABASE
+- [x] USE
+
+## Step 2: Table Design
+
+- [x] CREATE TABLE
+- [x] Constraints
+- [x] ALTER TABLE
+
+## Step 3: CRUD Operations
+
+- [x] INSERT
 - [x] SELECT
+- [x] UPDATE
+- [x] DELETE
+
+## Step 4: Filtering Data
+
 - [x] WHERE
 - [x] ORDER BY
 - [x] DISTINCT
@@ -10,19 +28,34 @@
 - [x] LIKE
 - [x] BETWEEN
 - [x] IN
-- [x] Aggregate Functions
+- [x] IS NULL
+- [x] IS NOT NULL
+
+## Step 5: Aggregate Functions
+
+- [x] COUNT
+- [x] SUM
+- [x] AVG
+- [x] MIN
+- [x] MAX
 - [x] GROUP BY
 - [x] HAVING
 
-## Step 2: Modify Data
+## Step 6: Query Enhancement
 
-- [ ] UPDATE
-- [ ] DELETE
+- [x] AS
 
-## Step 3: Change Database Structure
+## Step 7: Joins
 
-- [ ] ALTER TABLE
+- [ ] INNER JOIN
+- [ ] LEFT JOIN
+- [ ] RIGHT JOIN
+- [ ] FULL OUTER JOIN
+- [ ] CROSS JOIN
+- [ ] SELF JOIN
 
-## Step 4: Combine Tables
+## Step 8: Advanced SQL
 
-- [ ] JOINS
+- [ ] Subqueries
+- [ ] Views
+- [ ] Transactions
