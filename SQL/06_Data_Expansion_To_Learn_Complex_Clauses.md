@@ -328,6 +328,19 @@ mysql> select * from payments;
 +------------+----------+--------------+----------------+----------------+
 20 rows in set (0.00 sec)
 
+mysql> select * from categories;
++-------------+---------------+---------------------------+
+| category_id | category_name | description               |
++-------------+---------------+---------------------------+
+|           1 | Laptop        | Portable computers        |
+|           2 | Smartphone    | Android and iOS phones    |
+|           3 | Accessories   | Computer accessories      |
+|           4 | Moniter       | LED and LCD monitors      |
+|           5 | Tablet        | Android and ipad tablets  |
+|           6 | Printer       | Inkjet and Laser printers |
++-------------+---------------+---------------------------+
+6 rows in set (0.02 sec)
+
 mysql> /* Multiple Columns */
 mysql> -- 11. Display unique combinations of: brand,price ?
 mysql> select distinct brand,price from products;
